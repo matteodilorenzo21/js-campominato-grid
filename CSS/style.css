@@ -1,0 +1,78 @@
+header {
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 5px rgba(0, 0, 255, 0.4);
+    position: relative;
+}
+
+header img {
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow: 0px 5px rgba(0, 0, 255, 0.4);
+    margin-left: 95px;
+}
+
+main {
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+}
+
+#grid {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    display: none;
+}
+
+.cell {
+    flex-basis: calc(100% / 10);
+    height: calc(100% / 10);           
+}
+
+.cell-medium {
+    flex-basis: calc(100% / 9);
+    height: calc(100% / 9);       
+}
+
+.cell-hard {
+    flex-basis: calc(100% / 7);
+    height: calc(100% / 7);           
+}
+
+[class^="cell"] {
+    border: 1px dashed #000;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 2px 1px #000;
+}
+
+[class^="cell"]:hover {
+    color: rgb(255, 183, 0);
+}
+
+.cell.clicked {
+    background-color: rgba(28, 28, 112, 0.6);
+}
+
+footer {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
