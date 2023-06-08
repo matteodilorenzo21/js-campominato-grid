@@ -35,11 +35,12 @@
                 <a href="#"><h1 class="display-2 fw-bold pb-1"><em>Minefield</em></h1></a>
             </div>
             <div class="actions d-flex align-items-center">
-                <span class="fw-bold me-3 text-primary">Difficulty:</span>
-                <select class="form-select border border-dark">
-                    <option value="1" class="text-success">Easy</option>
-                    <option value="2" class="text-warning">Medium</option>
-                    <option value="3" class="text-danger">Hard</option>
+                <span id="score-placeholder"  class="fw-bold me-5 text-primary">Score:</span>
+                <span class="fw-bold me-3 ms-5 text-primary">Difficulty:</span>
+                <select id="difficulty-select" class="form-select border border-dark">
+                    <option value="easy" class="text-success">Easy</option>
+                    <option value="medium" class="text-warning">Medium</option>
+                    <option value="hard" class="text-danger">Hard</option>
                   </select>
                 <button id="play-btn" class="btn btn-dark px-4 ms-5">Play</button>
             </div>

@@ -28,28 +28,31 @@ main {
 }
 
 #grid {
-    width: 500px;
     height: 500px;
+    width: 500px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid #000;
+    
     display: none;
 }
 
 .cell {
     flex-basis: calc(100% / 10);
-    height: calc(100% / 10);           
+    height: calc(100% / 10);
+    background-color: rgba(108, 255, 103, 0.8);        
 }
 
 .cell-medium {
     flex-basis: calc(100% / 9);
-    height: calc(100% / 9);       
+    height: calc(100% / 9);
+    background-color: rgba(255, 245, 100, 0.8);     
 }
 
 .cell-hard {
     flex-basis: calc(100% / 7);
-    height: calc(100% / 7);           
+    height: calc(100% / 7);
+    background-color: rgba(255, 100, 100, 0.8);          
 }
 
 [class^="cell"] {
@@ -65,11 +68,15 @@ main {
 }
 
 [class^="cell"]:hover {
-    color: rgb(255, 183, 0);
+    color: rgb(255, 221, 0);
 }
 
 .cell.clicked {
-    background-color: rgba(28, 28, 112, 0.6);
+    background-color: rgb(0, 55, 255);
+    color: #fff;
+    text-shadow: 0px 0px 1px #000;
+    font-weight: 700;
+    border: 1px dashed #fff;
 }
 
 footer {
